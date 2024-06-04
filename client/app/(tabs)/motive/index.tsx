@@ -7,6 +7,7 @@ import { useContext, useState } from "react";
 import { BottomButton } from "@/components/containers/BottomButton";
 import { TextArea } from "@/components/atoms/TextArea";
 import { MedConnectContext } from "@/context";
+import { Spacer } from "@/components/atoms/Spacer";
 
 export default function MotiveScreen() {
     const router = useRouter();
@@ -37,6 +38,7 @@ export default function MotiveScreen() {
             </CenteredView>
             <BottomButton>
                 <BigButton text="Continuar" onPress={updateMotive} />
+                <Spacer height={30} />
             </BottomButton>
         </>
     )

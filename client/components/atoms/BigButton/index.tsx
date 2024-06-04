@@ -12,7 +12,7 @@ type BigButtonProps = {
 export const BigButton: FC<BigButtonProps> = ({ text, onPress }) => {
     return (
         <StyledView>
-            <TouchableOpacity onPress={onPress} >
+            <TouchableOpacity onPress={onPress}>
                 <ThemedText type="main-button">
                     {text}
                 </ThemedText>
